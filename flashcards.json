@@ -1,0 +1,114 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "flashcard",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AnswerIntent",
+                    "slots": [
+                        {
+                            "name": "answer",
+                            "type": "answer"
+                        }
+                    ],
+                    "samples": [
+                        "I think it's {answer}",
+                        "Is it {answer}",
+                        "{answer}",
+                        "It is {answer}"
+                    ]
+                },
+                {
+                    "name": "SetMyLanguageIntent",
+                    "slots": [
+                        {
+                            "name": "languages",
+                            "type": "languages"
+                        }
+                    ],
+                    "samples": [
+                        "Test my {languages} knowledge",
+                        "Practice {languages}",
+                        "{languages}",
+                        "Let's do some {languages}",
+                        "In {languages} please"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "answer",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "length"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "len"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "print"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "puts"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "console.log"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "capitalized"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "not capitalized"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "languages",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "ruby"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "python"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "javascript"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
